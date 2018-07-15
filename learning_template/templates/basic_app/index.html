@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+  {% block body_block %}
+    <h1>Welcome to the index page! </h1>
+	{{sometext|upper}}</br>
+	{{number|add:'2'}}
+	<h2>using custom filters</h2>
+	{{sometext|cutMe:'hello'}}
+    {% endblock %}
